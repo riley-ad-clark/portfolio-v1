@@ -42,7 +42,7 @@
 
   .blink {
     animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
   }
   @keyframes blink-animation {
     to {
@@ -245,7 +245,6 @@ button.nope:hover {
 
 .about {
     box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
-
 }
 
 .about-sect {
@@ -254,11 +253,11 @@ button.nope:hover {
     display: flex;
     flex-direction: row;
     animation: fadeIn 0.5s ease-in-out 2s forwards;
-
 }
 
 .about-inner {
-    margin: 25px
+    margin: 25px;
+    flex: 1; /* Take remaining space */
 }
 
 .main-p {
@@ -269,12 +268,30 @@ button.nope:hover {
 .about-me {
     color: var(--col-main-light-green-hover);
 }
-img {
-    margin-top: 15px;
-    width: 350px;
+
+.about-image {
+    flex: 1;
     height: 450px;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    margin: 15px; /* Adjust the margin as needed */
 }
+
+.first-image {
+    background-image: url('./assets/img/second-portrait.png');
+}
+
+.second-image {
+    background-image: url('./assets/img/main-portrait.jpg');
+}
+
+img {
+    display: none; /* Hide the original img tags */
+}
+
+/* Add media queries for responsive design if necessary */
+
 
 /*--------footer--------*/
 .foot {
@@ -286,7 +303,8 @@ footer {
     color: #fff;
     height: 80px;
     width: 100%;
-    z-index: 2;
+    z-index: 1000000;
+    background-color: var(--bg-dark-mode-main);
 }
 
 nav.foot {
