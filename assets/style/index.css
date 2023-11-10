@@ -31,6 +31,15 @@
     background-color: var(--bg-dark-mode-lighter);
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 /*--------end of general--------*/
 
 /*--------header--------*/
@@ -43,6 +52,7 @@
     font-size: 25px;
     line-height: 70px;
     color: var(--col-white);
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 header {
@@ -61,7 +71,7 @@ nav.head {
     color: var(--col-white);
     font-size: 0px;
     display: flex;
-    
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 nav.head a {
@@ -127,8 +137,10 @@ i.fa-bars {
 }
 
 .hero-h2 {
+    opacity: 0;
     margin-top: 10px;
     color: var(--col-white);
+    animation: fadeIn 1s ease-in-out 1s forwards;
 }
 
 video {
@@ -159,13 +171,16 @@ video {
 }
 
 h1 {
+    opacity: 0;
     font-size: 50px;
     color: var(--col-white);
     z-index: 0;
     vertical-align: top;
+    animation: fadeIn 0.75s ease-in-out 0.5s forwards;
 }
 
 button.start-here {
+    opacity: 0;
     padding: 10px 10px 10px 10px;
     margin-top: 20px;
     border-radius: 10px;
@@ -174,6 +189,7 @@ button.start-here {
     transition: 0.3s ease-in-out;
     margin-right: 10px;
     color: var(--col-white);
+    animation: fadeIn 0.5s ease-in-out 1.5s forwards;
 }
 
 button.start-here:hover {
@@ -182,6 +198,7 @@ button.start-here:hover {
 }
 
 button.nope {
+    opacity: 0;
     padding: 10px 10px 10px 10px;
     margin-top: 20px;
     border-radius: 10px;
@@ -189,6 +206,7 @@ button.nope {
     background-color: rgb(31, 32, 35, 0.5);
     transition: 0.3s ease-in-out;
     color: var(--col-white);
+    animation: fadeIn 0.5s ease-in-out 1.75s forwards;
 }
 
 button.nope:hover {
