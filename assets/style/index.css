@@ -40,6 +40,21 @@
     }
   }
 
+  .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
 /*--------end of general--------*/
 
 /*--------header--------*/
@@ -226,13 +241,47 @@ button.nope:hover {
 
 /*--------end of hero--------*/
 
+/*--------about---------*/
+
+.about {
+    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
+
+}
+
+.about-sect {
+    opacity: 0;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    animation: fadeIn 0.5s ease-in-out 2s forwards;
+
+}
+
+.about-inner {
+    margin: 25px
+}
+
+.main-p {
+    margin-top: 20px;
+    color: var(--col-light-grey);
+}
+
+.about-me {
+    color: var(--col-main-light-green-hover);
+}
+img {
+    margin-top: 15px;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+
 /*--------footer--------*/
 .foot {
     justify-content: space-between;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     color: #fff;
     height: 80px;
