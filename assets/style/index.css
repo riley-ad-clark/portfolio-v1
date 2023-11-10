@@ -442,10 +442,102 @@ li.indesign {
 
 }
 
-
-
 /*--------end of about / skills--------*/
 
+/*--------contact--------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    margin: 100px 0 100px 0;
+    animation: fadeIn 0.5s ease-in-out 2s forwards;
+}
+
+/*--------THIS IS COMPLETELY STOLEN, I JUST LIKED THE PUNCH LINE!!---------*/
+/*--------SOURCE: https://1stwebdesigner.com/make-fire-animation-text-effect-css/---------*/
+.fire {
+    color: #f5f5f5; /* Light text color */
+    text-align: center; /* Center alignment of text */
+    font-size: 25px; /* Text size */
+    text-shadow: /* Multi-layered text-shadow for fire effect */
+    0px -1px 1px #fff, /* Innermost layer - intense heat (white) */
+    0px -1px 3px #FF3, /* Second layer - core of flame (yellow) */
+    0px -2px 5px #F90, /* Middle layer - body of flame (orange) */
+    0px -5px 7px #C33; /* Outermost layer - edges of flame (red) */
+   }
+
+.burning {
+    color: var(--col-white);
+}
+
+.or {
+    margin: 20px 0 20px 0;
+    color: var(--col-white);
+}
+
+.personalized {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-p {
+    margin: 8px 5px 0 0;
+    color: var(--col-white);
+}
+
+.contact-form {
+    font-size: 20px;
+}
+
+.contact-p {
+    margin-top: 17px;
+    color: var(--col-white);
+}
+
+.contact-ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .contact-ul li {
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .c-button {
+    margin: 8px 0 0 8px;
+    background-color: var(--col-main-light-green);
+    color: var(--col-white);
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+  }
+
+
+.c-button:hover {
+    background-color: var(--col-main-light-green-hover);
+    transition: all 0.3s ease-in-out;
+}
+
+
+i {
+    color: var(--col-light-grey);
+    padding: 10px 8px 0 8px;
+    font-size: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+i:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
 
 /*--------footer--------*/
 .foot {
@@ -465,19 +557,7 @@ nav.foot {
     line-height: 80px;
 }
 
-nav.foot a i {
-    line-height: 80px;
-    color: #a7a7a7;
-    padding: 0 10px;
-    font-size: 27px;
-    transition: all 0.3s ease-in-out;
-}
 
-nav.foot a i:hover {
-    line-height: 80px;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
 
 .copyright {
     line-height: 80px;
