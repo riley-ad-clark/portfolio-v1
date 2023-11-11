@@ -287,7 +287,6 @@ img {
     position: relative;
     background-color: var(--bg-dark-mode-lightest);
     padding-top: 80px
-    
 }
 
 .banner-container::before {
@@ -643,20 +642,132 @@ nav.foot {
 
     /*--------@media--------*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
+
     h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .fire {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .about-sect {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img2 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .img1 {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .img1 {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+    .img2 {
+        height: 400px;
+        width: 300px;
+    }
+
+    .about-sect {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .about-sect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img2 {
+        order: 2;
+    }
+
+    .img1 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .software-list {
+        width: 100%;
+    }
+
+    .software-list li {
+        font-size: 14px;
+    }
+
+    .coding-list {
+        font-size: 14px;
+    }
+
+    .coding-list li {
+        font-size: 14px;
+    }
 }
 
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .banner-container::before {
+        animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 40s linear infinite;
+     }
+ }
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .banner-container::before {
+        animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 25s linear infinite;
+     }
+ }
+
 @media only screen and (max-width: 500px) {
-    
+    h1 {
+        font-size: 25px;
+    }
+
+    .copy {
+        font-size: 11px;
+    }
+
+    .c-button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    .banner-container::before {
+       animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 20s linear infinite;
+    }
 }

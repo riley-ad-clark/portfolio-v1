@@ -47,20 +47,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         closePopup();
     }
-
-    function validateInput(input) {
-        const isValid = input.value.trim() !== '';
-        const feedbackIcon = input.parentElement.querySelector('.feedback-icon');
-        
-        if (isValid) {
-            feedbackIcon.innerHTML = '<i class="fa-solid fa-check-circle"></i>';
-            feedbackIcon.classList.add('valid');
-            feedbackIcon.classList.remove('invalid');
-        } else {
-            feedbackIcon.innerHTML = '<i class="fa-solid fa-times-circle"></i>';
-            feedbackIcon.classList.add('invalid');
-            feedbackIcon.classList.remove('valid');
-        }
-    } 
 });
 
