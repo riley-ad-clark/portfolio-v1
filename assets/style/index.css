@@ -162,15 +162,49 @@ nav.head ul li a.c-button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-i.fa-bars {
+i.hamburger {
     color: #fff;
     font-size: 30px;
     display: none;
+    line-height: 70px;
 }
 
 /*--------end of header-------- */
-
-
+/*--------side menu--------*/
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: var(--bg-dark-mode-main);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ul {
+        li {
+            list-style: none;
+            padding: 20px 0;
+            a {
+                text-decoration: none;
+                color: var(--col-white);
+                transition: all 0.3s ease-in-out;
+                display: inline-block;
+                padding: 10px 15px;
+                font-size: 14px;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .side-secret {
+                color: var(--bg-dark-mode-ultra-light);
+            }
+        }
+    }
+}
+/*--------end of side menu--------*/
 /*--------hero--------*/
 
 .video-container {
@@ -805,6 +839,22 @@ nav.foot {
     .banner-container::before {
         animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 25s linear infinite;
      }
+
+     .head-ul {
+        display: none;
+    }
+
+    i.hamburger {
+        color: #fff;
+        font-size: 30px;
+        display: block;
+        line-height: 70px;
+        transition: 0.25s ease-in-out all;
+        :hover {
+            transition: 0.25s ease-in-out all;
+            color: var(--col-light-grey);
+        }
+    }
 }
 
 
