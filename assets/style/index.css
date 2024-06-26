@@ -4,11 +4,16 @@
     --col-main-light-blue: rgb(37, 152, 219);
     --col-main-light-green: #60c24c;
     --col-main-light-green-hover: #55ac43;
-    --col-white: #fff;
+    --col-white: #e4e5e6;
     --col-light-grey: #c7c8c9;
     --bg-dark-mode-main: #1e1f22;
     --bg-dark-mode-lighter: #2b2d31;
     --bg-dark-mode-lightest: #313338;
+    --bg-dark-mode-ultra-light: #414349;
+}
+
+body {
+    color: var(--col-white);
 }
 
 .container {
@@ -44,16 +49,40 @@
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
   }
+
   @keyframes blink-animation {
     to {
       visibility: hidden;
     }
   }
+  
   @-webkit-keyframes blink-animation {
     to {
       visibility: hidden;
     }
   }
+
+.green {
+    color: var(--col-main-light-green);
+}
+
+.green-bg {
+    background-color: var(--col-main-light-green);
+}
+
+.green-hover {
+    color: var(--col-main-light-green-hover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--col-main-light-green);
+    transition: all 0.25s ease-in-out;
+    :hover {
+        transition: all 0.25s ease-in-out;
+        color: var(--col-main-light-green-hover);
+    }
+}
 
 /*--------end of general--------*/
 
@@ -64,10 +93,10 @@
 }
 
 .head h2 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 70px;
     color: var(--col-white);
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 header {
@@ -86,7 +115,8 @@ nav.head {
     color: var(--col-white);
     font-size: 0px;
     display: flex;
-    animation: fadeIn 0.5s ease-in-out;
+    flex-direction: row;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 nav.head a {
@@ -123,14 +153,12 @@ nav.head ul li a.c-button {
     width: 100px;
     border-radius: 10px;
     margin-top: 17px;
-    background-color: var(--col-main-light-green);
     color: #fff;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
 }
 
 nav.head ul li a.c-button:hover {
-    background-color: var(--col-main-light-green-hover);
     transition: all 0.3s ease-in-out;
 }
 
@@ -156,7 +184,7 @@ i.fa-bars {
     opacity: 0;
     margin-top: 10px;
     color: var(--col-white);
-    animation: fadeIn 1s ease-in-out 1s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 video {
@@ -192,7 +220,7 @@ h1 {
     color: var(--col-white);
     z-index: 0;
     vertical-align: top;
-    animation: fadeIn 0.75s ease-in-out 0.5s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 button.start-here {
@@ -205,7 +233,7 @@ button.start-here {
     transition: 0.3s ease-in-out;
     margin-right: 10px;
     color: var(--col-white);
-    animation: fadeIn 0.5s ease-in-out 1.5s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 button.start-here:hover {
@@ -222,7 +250,7 @@ button.nope {
     background-color: rgb(31, 32, 35, 0.5);
     transition: 0.3s ease-in-out;
     color: var(--col-white);
-    animation: fadeIn 0.5s ease-in-out 1.75s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 button.nope:hover {
@@ -246,6 +274,9 @@ button.nope:hover {
 
 .about {
     box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
+    h2 {
+        font-size: 30px;
+    }
 }
 
 .about-sect {
@@ -253,7 +284,7 @@ button.nope:hover {
     padding: 100px 0 100px 0;
     display: flex;
     flex-direction: row;
-    animation: fadeIn 0.5s ease-in-out 2s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .about-inner {
@@ -265,20 +296,14 @@ button.nope:hover {
     color: var(--col-light-grey);
 }
 
-.about-me {
-    color: var(--col-main-light-green-hover);
-}
-
 img {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 350px;
     height: 450px;
     border-radius: 10px;
 }
 
-.skills {
-    padding: 100px 0 100px 0;
-}
+/* Skills */
 
 .banner-container {
     width: 100%;
@@ -297,8 +322,8 @@ img {
     left: 0;
     width: 200%;
     height: 100%;
-    background: url('../img/skills-sprite.png') repeat-x;
-    animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 100s linear infinite;
+    background: url('../img/skills-sprite-v1.png') repeat-x;
+    animation: fadeIn 0.5s ease-in-out forwards, moveBadges 100s linear infinite;
 }
 
 @keyframes moveBadges {
@@ -310,140 +335,224 @@ img {
     }
 }
 
-.skill-sect {
+#skills {
     opacity: 0;
-    box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
-    animation: fadeIn 0.5s ease-in-out 2s forwards;
-}
+    animation: fadeIn 0.5s ease-in-out forwards;
+    h2 {
+        padding-top: 80px;
+        font-size: 30px;
+    }
 
-.skills-h2 {
-    color: var(--col-main-light-green);
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
+    .p-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        p {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
 
-.skills-p {
-    color: var(--col-light-grey);
-}
+    img {
+        width: 100px;
+        height: 100px;
+    }
 
-.skills-top {
-    margin-bottom: 20px;
-}
+    #ef {
+        width: fit-content;
+    }
 
-.skills-mid {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    .ef-p {
+        display: flex;
+        flex-direction: column;
+        gap: 0PX;
+        margin-top: 0px;
+        :last-child {
+            margin-top: 0px;
+        }
+    }
 
-.skills-mid-2 {
-    margin-bottom: 20px;
-}
+    .skill {
+        padding: 0 20px 20px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.skills-bottom {
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
+    .skill-alternate {
+        background-color: #35383d;
+        padding: 0 20px 20px 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
-.software-div {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    text-align: center;
-}
+    .last-skill {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 
-.coding-div {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    text-align: center;
-}
+    .coding-skills-box {
+        gap: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        h3 {
+            background-color: var(--bg-dark-mode-ultra-light);
+            padding: 10px 20px 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    .skill-box {
+        width: 400px;
+        background-color: var(--bg-dark-mode-lightest);
+        border-radius: 10px;
+    }
+    
+    .currently-learning {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
 
-.coding-list {
-    list-style-type: none;
-    text-align: center;
-    background-color: var(--bg-dark-mode-lightest);
-    width: 425px;
-    padding: 10px;
-    border-radius: 10px;
-}
+    #php, #aws {
+        width: 200px    
+    }
 
-.coding-list li {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 18px;
-}
-
-.software-list {
-    list-style-type: none;
-    text-align: center;
-    background-color: var(--bg-dark-mode-lightest);
-    width: 675px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.software-list li {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 18px;
-}
-
-li.html {
-    background-color: #2965F1;
-    color: var(--col-white);
-}
-
-li.css {
-    background-color: #EF652A;
-    color: var(--col-white);
-}
-
-li.js {
-    background-color: #FFDE25;
-    color: #000;
-}
-
-li.md {
-    background-color: #000;
-    color: var(--col-white);
-}
-
-li.photoshop {
-    background-color: #001E36;
-    color: #31A8FF;
-}
-
-li.illustrator {
-    background-color: #330000;
-    color: #FF9A00;
-}
-
-li.after-effects {
-    background-color: #00005B;
-    color: #9999FF;
-}
-
-li.premiere-pro {
-    background-color: #00005B;
-    color: #9999FF;
-}
-
-li.indesign {
-    background-color: #49021F;
-    color: #FF3366;
-
+    ol {
+        padding-left: 40px;
+        li {
+            padding: 20px 20px 0 0;
+        }
+    }
 }
 
 /*--------end of about / skills--------*/
+/*--------projects--------*/
+.projects-sect {
+    margin-top: 100px;
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .project-title-link {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
 
+    }
+    .projects-box {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-title-link {
+            i {
+                color: var(--col-light-grey);
+                font-size: 25px;
+                line-height: 37px;
+                margin-left: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+            
+            i:hover {
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+            }
+    }
+    
+    .tech-used {
+        gap: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        .tech-bubble {
+            padding: 5px 10px 5px 10px;
+            border-radius: 50px;
+        }
+        .react {
+            background-color: #61dafb;
+            color: #000;
+        }
+        .js {
+            background-color: #f7df1e;
+            color: #000;
+        }
+        .html {
+            background-color: #e34c26;
+            color: #fff;
+        }
+        .css {
+            background-color: #1572b6;
+            color: #fff;
+        }
+        .csharp {
+            background-color: #68217a;
+            color: #fff;
+        }
+        .dotnet {
+            background-color: #512bd4;
+            color: #fff;
+        }
+        .azure {
+            background-color: #007acc;
+            color: #fff;
+        }
+        .sql {
+            background-color: #f29111;
+            color: #fff;
+        }
+    }
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-description {
+        margin-top: 20px;
+    }
+
+    img {
+        height: auto !important;
+        width: 500px;
+        margin-top: 0px;
+    }
+
+    .project {
+        background-color: var(--bg-dark-mode-lightest);
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .project-alternate {
+        padding: 20px;
+        background-color: #35383d;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+}
+/*--------end of projects--------*/
 /*--------contact--------*/
 
 .contact {
@@ -451,9 +560,11 @@ li.indesign {
     flex-direction: column;
     opacity: 0;
     margin: 100px 0 100px 0;
-    animation: fadeIn 0.5s ease-in-out 2s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    h2, span {
+        font-size: 30px;
+    }
 }
-
 /*--------THIS IS COMPLETELY STOLEN, I JUST LIKED THE PUNCH LINE!!---------*/
 /*--------SOURCE: https://1stwebdesigner.com/make-fire-animation-text-effect-css/---------*/
 .fire {
@@ -510,7 +621,6 @@ li.indesign {
 
   .c-button {
     margin: 8px 0 0 8px;
-    background-color: var(--col-main-light-green);
     color: var(--col-white);
     text-decoration: none;
     padding: 8px 20px 8px 20px;
@@ -526,19 +636,26 @@ li.indesign {
     transition: all 0.3s ease-in-out;
 }
 
-
-i {
-    color: var(--col-light-grey);
-    padding: 10px 8px 0 8px;
-    font-size: 35px;
-    transition: all 0.3s ease-in-out;
+.contact {
+    ul {
+        li {
+            a {
+                i {
+                    color: var(--col-light-grey);
+                    padding: 10px 8px 0 8px;
+                    font-size: 35px;
+                    transition: all 0.3s ease-in-out;
+                }
+                
+                i:hover {
+                    color: #fff;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
 }
-
-i:hover {
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
+/*--------end of contact--------*/
 /*--------footer--------*/
 .foot {
     justify-content: space-between;
@@ -566,80 +683,6 @@ nav.foot {
 }
 /*--------end of footer--------*/
 
-/*--------form--------*/
-
-.form-p {
-    font-size: 10px;
-    color: var(--col-light-grey);
-    margin: 10px 0 10px 0;
-}
-
-
-    /* Add the styles for the pop-up form */
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 2;
-    }
-
-    .popup-form {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        padding: 20px;
-        background-color: var(--bg-dark-mode-lighter);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 3;
-        color: var(--col-white);
-        border-radius: 10px;
-    }
-
-    .popup-form label {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .popup-form input,
-    .popup-form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        color: #000; /* Set the text color to black */
-        border: 1px solid var(--col-light-grey);
-        border-radius: 10px;
-    }
-
-    .popup-form textarea {
-        height: 120px;
-        resize: none;
-    }
-
-    .popup-form button {
-        background-color: var(--col-main-light-green);
-        color: #fff;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-
-    .popup-form .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-
-
     /*--------@media--------*/
 
 @media only screen and (max-width: 1280px) {
@@ -654,10 +697,6 @@ nav.foot {
 
     .fire {
         font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
     }
 
     .about-sect {
@@ -676,6 +715,15 @@ nav.foot {
     }
 }
 
+@media only screen and (max-width: 1250px) {
+    .main-box {
+        flex-wrap: wrap;
+        flex: 1 1 45%
+    }
+
+
+}
+
 @media only screen and (max-width: 1000px) {
     .img1 {
         visibility: hidden;
@@ -692,7 +740,47 @@ nav.foot {
         flex-direction: column;
         align-items: center;
     }
+
+    .main-box {
+        flex-direction: column;
+    }
+
+    .currently-learning {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    ol:last-child {
+        padding-bottom: 20px;
+    }
+
+    .project, .project-alternate {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tech-used {
+        flex-wrap: wrap;
+        flex: 1 1 33%
+    }
 }
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .banner-container::before {
+        animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 40s linear infinite;
+     }
+ }
 
 @media only screen and (max-width: 768px) {
     .about-sect {
@@ -710,35 +798,6 @@ nav.foot {
         height: 0px;
     }
 
-    .software-list {
-        width: 100%;
-    }
-
-    .software-list li {
-        font-size: 14px;
-    }
-
-    .coding-list {
-        font-size: 14px;
-    }
-
-    .coding-list li {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    h1 {
-        font-size: 35px;
-    }
-
-    .banner-container::before {
-        animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 40s linear infinite;
-     }
- }
-
-
-@media only screen and (max-width: 768px) {
     h1 {
         font-size: 30px;
     }
@@ -746,10 +805,15 @@ nav.foot {
     .banner-container::before {
         animation: fadeIn 0.5s ease-in-out 2s forwards, moveBadges 25s linear infinite;
      }
- }
+}
+
 
 @media only screen and (max-width: 500px) {
     h1 {
+        font-size: 25px;
+    }
+
+    .head h2 {
         font-size: 25px;
     }
 

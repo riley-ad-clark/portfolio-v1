@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale">
         <meta name="author" content="Riley Clark">
-        <meta name="description" content="Riley Clark | Aspiring full-stack developer">
-        <meta name="keywords" content="web developement, html, css, javascript, js">
+        <meta name="description" content="Riley Clark | Full-stack developer">
+        <meta name="keywords" content="web development, html, css, javascript, js">
         <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/style/index.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
-        <script src="./assets/src/index.js" defer></script>
-        <title>Riley Clark | Aspiring full-stack developer</title>
+        <title>Riley Clark | Full-stack developer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
                         <ul>
                             <li><a href="#about">about</a></li>
                             <li><a href="#skills">skills</a></li>
-                            <li><a class="c-button">contact</a></li>
+                            <li><a href="#contact" class="c-button green-bg">contact</a></li>
                         </ul>
                         <i class="fa-solid fa-bars"></i>
                     </nav>
@@ -36,7 +35,6 @@
             </div>
         </header>
     <!----------------end of header-------------- -->
-
     <!----------------hero---------------->
     <section class="hero center">
         <div class="video-container">
@@ -47,8 +45,8 @@
             </video>
         <div class="container center">
             <div>
-                <h1>Hi! My name is Riley Clark.</h1>
-                <h1>I am an aspiring full-stack developer</span></h1>
+                <h1>Hi! My name is <span class="green">Riley Clark</span>.</h1>
+                <h1>I am a full-stack developer</span></h1>
                 <h2 class="hero-h2">Care to know more?</span></h2>
                 <div class="buttons">
                     <a href="#about"><button class="start-here">Start here</button></a>
@@ -58,19 +56,15 @@
         </div>
     </section>
     <!----------------end of hero---------------->
-
-
-
-    <!--------about / skills-------->
-
+    <!--------about-------->
     <main>
         <div class="about" id="about">
             <div class="about-sect container">
                 <img class="img1" src="./assets/img/second-portrait.png" alt="Riley in a pink suit sitting on a fence in a park">
                 <div class="about-inner">
-                    <h2 class="about-me">About Me <span class="blink">:</span></h2>
+                    <h2 class="green">About Me <span class="blink">:</span></h2>
                     <p class="main-p">
-                        Hi again! As you know, my name is Riley Clark, you also know that I am an aspiring full-stack developer. But you're here to learn more about me, not what 
+                        Hi again! As you know, my name is Riley Clark, you also know that I am a full-stack developer. But you're here to learn more about me, not what 
                         you already know!
                     </p>
                     <p class="main-p">
@@ -80,8 +74,8 @@
                     </p>
 
                     <p class="main-p">
-                        I am an avid enjoyer of video games, music, and movies, virtually <b>anything</b> to wind down at the end of the day. And, last but not least, I adore all aspects (both good, and
-                        bad) of coding. As with many other things you will eventually learn within your lifetime, it allows you to be a life long learner, which is something we can all attest is a good
+                        I am an avid enjoyer of video games, music, home servers, and movies, virtually <b>anything</b> to wind down at the end of the day. And, last but not least, I adore all aspects (both good, and
+                        bad) of coding. As with many other things you will eventually find within your lifetime, it allows you to be a life long learner, which is something we can all attest is a good
                         thing in the end!
                     </p>    
                 </div>
@@ -89,69 +83,260 @@
             </div>
         </div>
     </main>
-
-    
-    <section class="skill-sect" id="skills">
-        <div class="banner-container"></div>
+    <!--------end of about-------->
+    <!--------skills-------->
+    <div class="banner-container"></div>
+    <section class="skill-sect container" id="skills">
         <div class="container center">
-            <h2 class="skills-h2">Skills <span class="blink">:</span></h2>
-            <p class="skills-top skills-p">
-                Regarding coding languages, I know a total of 4:
-            </p>
-            <div class="coding-div">
-                <ul class="coding-list">
-                    <li class="html">HTML</li>
-                    <li class="css">CSS</li>
-                    <li class="js">JavaScript</li>
-                    <li class="md">Markdown</li>
-                </ul>
+            <h2 class="green">Skills<span class="blink">:</span></h2>
+            <p>Below are some of the skills I believe to be my strongest, the rest are in the banner above.</p>
+        </div>
+            <div class="coding-skills-box main-box">
+                <div class="front-end-skills skill-box">
+                    <h3>Front-end</h3>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>HTML-5</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/html.png">                </div>
+                    <div class="skill-alternate">
+                        <div class="p-box">
+                            <p>CSS-3</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/css.png">
+                    </div>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>JavaScript</p>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/js.png">
+                    </div>
+                    <div class="skill-alternate last-skill">
+                        <div class="p-box">
+                            <p>React</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/react.png">
+                    </div>
+                </div>
+                <div class="back-end-skills skill-box">
+                    <h3>Back-end</h3>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>C#</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/csharp.png">
+                    </div>
+                    <div class="skill-alternate">
+                        <div class="p-box">
+                            <p>.NET / Core</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/dotnet.png">
+                    </div>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>SQL</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/sql.png">
+                    </div>
+                    <div class="skill-alternate last-skill">
+                        <div class="p-box ef-p">
+                            <p>Entity</p>
+                            <p>Framework</p>
+                        </div>
+                        <img id="ef" src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/entityframework.png">
+                    </div>
+                </div>
+                <div class="technical-skills skill-box">
+                    <h3>IDEs and Operating Systems</h3>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>VSCodium</p>
+                        </div> 
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/codium.png">
+                    </div>
+                    <div class="skill-alternate">
+                        <div class="p-box">
+                            <p>Visual Studio</p>
+                        </div>                 
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/visualstudio.png">
+                    </div>
+                    <div class="skill">
+                        <div class="p-box ef-p">
+                            <p>Debian 12</p>
+                            <p>(Bookworm)</p>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/debian.png">         
+                    </div>
+                    <div class="skill-alternate last-skill">
+                        <div class="p-box">
+                            <p>Windows 10 / 11</p>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/windows.png">                 
+                    </div>
+                </div>
             </div>
-            <p class="skills-p skills-mid">
-                There is a case to be made for all my other skills though! 
-            </p>
-            <p class="skills-mid-2 skills-p">
-                Throughout middle, and highschool, I was intrigued by not only the Microsoft suite, but the Adobe
-                 suite especially. I took time out of my schedule to practice multiple softwares, including (but not not limited to):
-            </p>   
-            <div class="software-div">
-                <ul class="software-list">
-                    <li class="photoshop">Photoshop</li>
-                    <li class="illustrator">Illustrator</li>
-                    <li class="after-effects">After Effects</li>
-                    <li class="premiere-pro">Premiere Pro</li>
-                    <li class="indesign">InDesign</li>
-                </ul>
-            </div> 
-            <p class="skills-bottom skills-p">
-                Highschool gave me the opportunity to master my craft within these programs, and I feel
-                as though they are a strong suit of mine!
-            </p>
+         <div class="center">
+                <h2 class="green">Currently Learning + ambitions<span class="blink">:</span></h2>
+                <p>
+                    In preparation for my upcoming internship at <a href="https://home.farmmedia.com/" target="_blank">Glacier FarmMedia</a>, 
+                    I am picking up some new skills!
+                </p>
+            </div>
+        <div class="currently-learning">
+            <div class="coding-skills-box">
+                <div class="skill-box">
+                    <h3>New tech-stack</h3>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>PHP</p>
+                        </div>                    
+                        <img id="php" src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/php.png">                
+                    </div>
+                    <div class="skill-alternate">
+                        <div class="p-box">
+                            <p>Laravel</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/laravel.png">
+                    </div>
+                    <div class="skill">
+                        <div class="p-box">
+                            <p>VueJS</p>
+                        </div>                    
+                        <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/vue.png">                
+                    </div>
+                    <div class="skill-alternate last-skill">
+                        <div class="p-box ef-p">
+                            <p>AWS</p>
+                        </div>                    
+                        <img id="aws" src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/aws-cloud.png">
+                    </div>
+                </div>
+            </div>
+            <div class="coding-skills-box">
+                <div class="skill-box">
+                    <h3>Future Riley's problems</h3>
+                    <ol>
+                        <li>
+                            <p>
+                                Revisit C# (Web APIs) and React to keep things fresh
+                            </p>
+                        </li>
+                        <li class="alternate">
+                            <p>
+                                Learn the ins and outs of Linux, and get very comfortable on the command line
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Attempt some game development (moreso get better with physics, and mathematical programming)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Revisit old projects from GitHub and give them some new life
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Continue improving my home server setup (I.E, work more with designing UI in JellyFin, and look into hosting sites via Cloudflare)
+                            </p>
+                        </li>                        
+                        <li>
+                            <p>
+                                Make a sudoku solver! I've been stewing on diagonally searching through arrays for a bit...
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </section>
+    <!--------end of skills-------->
+    <!--------projects--------->
+    <section class="projects-sect container" id="projects">
+        <h2 class="green">Projects<span class="blink">:</span></h2>
+        <p>Just in case you are here to see some of my work, follow any of the links below to see it!</p>
+        <div class="projects-box">
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/swift-type-gif.gif">
+                <div class="project-details">
+                    <div class="project-title-link">
+                        <h3 class="project-title">Swift-Type Blitz</h3>
+                        <li><a href="https://github.com/riley-ad-clark/swift-type-blitz" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </div>
+                    <p class="project-description">
+                        Swift-Type Blitz is a typing game of pure skill. Made using vanilla JavaScript, HTML, and CSS, do you have what it takes to
+                        get through all 120 words in the time frame? If not, don't worry! Your scores are all saved on local storage, so you are
+                        free to visit any time you'd like!
+                    </p>
+                    <div class="tech-used">
+                        <p class="tech-bubble js">JavaScript</p>
+                        <p class="tech-bubble html">HTML</p>
+                        <p class="tech-bubble css">CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-alternate">
+                <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/byte-gaming-gif.gif">
+                <div>
+                    <div class="project-title-link">
+                        <h3 class="project-title">Byte Gaming</h3>
+                        <li><a href="https://github.com/mcguenette/byte-gaming" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </div>
+                    <p class="project-description">
+                        Made in collaboration with <a href="https://github.com/mcguenette" target="_blank">MC Guenette</a>, <a href="https://github.com/nnifemi" target="_blank">Nifemi Leye</a>
+                        and <a href="https://github.com/MaksimDimov" target="_blank">Maksim Dimov</a>, Byte Gaming is your one stop shop for high quality, specialized gaming 
+                        peripherals! Made collaboratively on GitHub using React for front-end, and C# with .NET Core Web APIs for the back-end, this application is
+                        highly maintainable with it's deployment to Azure.
+                    </p>
+                    <div class="tech-used">
+                        <p class="tech-bubble react">React</p>
+                        <p class="tech-bubble html">HTML</p>
+                        <p class="tech-bubble css">CSS</p>
+                        <p class="tech-bubble csharp">C#</p>
+                        <p class="tech-bubble dotnet">.NET</p>
+                        <p class="tech-bubble sql">SQL</p>
+                        <p class="tech-bubble azure">Azure</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/linked-out-gif.gif">
+                <div class="project-details">
+                    <div class="project-title-link">
+                        <h3 class="project-title">LinkedOut</h3>
+                        <li><a href="https://github.com/riley-ad-clark/linked-out" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </div>
+                    <p class="project-description">
+                        Made in collaboration on GitHub with <a href="https://github.com/ZphoenixT" target="_blank">Zander Toews</a>, LinkedOut is a page that takes... <em>light</em>
+                        inspiration from a mega corp, and utilizes vanilla JavaScript with API integration, along with HTML, and CSS to boot. The page has a functional
+                        log in mechanism as well! Give it a shot ;)
+                    </p>
+                    <div class="tech-used">
+                        <p class="tech-bubble js">JavaScript</p>
+                        <p class="tech-bubble html">HTML</p>
+                        <p class="tech-bubble css">CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--------end of about / skills-------->
-
+    </section>
+    <!--------end of projects--------->
     <!--------contact-------->
-    <section class="contact center">
+    <section class="contact center" id="contact">
         <div class="container center contact-div">
             <h2 class="burning">Got a <span class="fire">burning</span> question?</h2>
             <p class="contact-p">Feel free to shoot me a message!</p>
             <ul class="contact-ul">
-                <li><a href="mailto:rileyclarky@gmail.com?subject=Inquiry%20From%20Portfolio%20Page"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://www.x.com/avogrotto" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="mailto:r1l3ycl4rk@gmail.com?subject=Inquiry%20From%20Portfolio%20Page"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://www.x.com/riley_ad_clark" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/riley-clark-5862202b5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/riley-ad-clark" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </div>
-        <div class="container">
-            <h2 class="or">or...</h2>
-            <div class="personalized">
-                <p class="person-p">Fill out a personalized</p>
-                <a class="c-button">Contact form</a>
-            </div>
-        </div>
     </section>
     <!--------end of contact-->
-
     <!--------footer-------->
         <footer>
             <div class="container flex foot">
@@ -163,25 +348,5 @@
             </div>
         </footer>
         <!--------end of footer-------->
-
-        <!--------form-------->
-
-        
-        <div class="popup-overlay" id="popupOverlay"></div>
-
-        <div class="popup-form" id="popupForm">
-            <span class="close-btn" onclick="closePopup()">X</span>
-            <h2>Contact Form</h2>
-            <form>
-                <p class="form-p">fields marked with * are required</p>
-                <label for="name">Name*:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email*:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="button" onclick="submitForm()">Submit</button>
-            </form>
-        </div>
     </body>
 </html>
