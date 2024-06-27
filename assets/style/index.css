@@ -113,6 +113,17 @@ a {
 
 /*--------header--------*/
 
+.logo-box {
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 50px;
+        height: auto;
+        margin-bottom: 17px;
+    }
+}
+
+
 .container.flex.head {
     justify-content: space-between;
 }
