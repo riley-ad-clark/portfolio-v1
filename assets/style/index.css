@@ -897,11 +897,7 @@ nav.foot {
 
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 25px;
-    }
-
-    .head h2 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .copy {
