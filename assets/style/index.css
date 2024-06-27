@@ -97,6 +97,18 @@ a {
     z-index: 998;
 }
 
+/* https://stackoverflow.com/questions/69970669/shimmer-effect-in-css */
+.shimmer {
+    color: var(--col-white);
+    -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 2.5s infinite;
+  }
+  
+   @keyframes shimmer {
+   100% {-webkit-mask-position:left}
+  }
+
 /*--------end of general--------*/
 
 /*--------header--------*/
