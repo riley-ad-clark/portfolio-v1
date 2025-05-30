@@ -777,13 +777,12 @@ nav.foot {
     }
 
     .img2 {
-        width: 400px;
-        height: 400px;
-    }
+        height: auto;
+        max-width: 300px;    }
 
     .img1 {
-        width: 400px;
-        height: 400px;
+        height: auto;
+        max-width: 300px;
     }
 }
 
@@ -804,8 +803,8 @@ nav.foot {
     }
 
     .img2 {
-        height: 400px;
-        width: 300px;
+        height: auto;
+        max-width: 300px;
     }
 
     .about-sect {
