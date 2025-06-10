@@ -353,7 +353,7 @@ button.nope:hover {
 
 .about-sect {
     opacity: 0;
-    padding: 50px 0 25px 0;
+    padding: 75px 0 25px 0;
     display: flex;
     flex-direction: row;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -1011,6 +1011,8 @@ nav.foot {
 
     .img2 {
         order: 2;
+        height: auto;
+        max-width: 100%;
     }
 
     .img1 {
