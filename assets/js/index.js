@@ -40,3 +40,18 @@ contact.addEventListener('click', function() {
     sideMenu.style.display = 'none';
     overlay.style.display = 'none';
 });
+
+// Function for allowing HoneyCombBackdrop to fade in at half scroll
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    // Fade in honey backdrop
+    const fadeStart = windowHeight / 100;
+    const fadeEnd = windowHeight;
+
+    let opacity = (scrollY - fadeStart) / (fadeEnd - fadeStart);
+    opacity = Math.min(Math.max(opacity, 0), 1); // Clamp between 0–1
+
+    document.querySelector('.head').style.opacity = opacity;
+});

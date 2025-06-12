@@ -27,6 +27,11 @@ body {
     margin-inline: auto;
 }
 
+.bigger-container {
+    width: min(100% - 40px, 1400px);
+    margin-inline: auto;
+}
+
 .center {
     display: grid;
     place-items: center;
@@ -138,13 +143,11 @@ a {
     .logo {
         width: 45px;
         height: auto;
-        margin-bottom: 17px;
         animation: swayLogo 10s ease-in-out infinite;
+        margin-top: 13px;
     }
 }
-
-
-.container.flex.head {
+.container.container.flex.head {
     justify-content: space-between;
 }
 
@@ -157,14 +160,15 @@ a {
 
 header {
     background-color: var(--bg-dark-mode-main);
-    min-width: 100%;
-    display: flex;
     overflow: hidden;
     box-shadow: rgba(0 0 0 / 0.2) 0px 1px 25px;
     height: 70px;
-    position: sticky; 
-    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10px;
     z-index: 99;
+    border-radius: 50px;
 }
 
 nav.head {
@@ -267,7 +271,7 @@ i.hamburger {
 .video-container {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 920px;
     overflow: hidden;
 }
 
@@ -1241,6 +1245,13 @@ nav.foot {
 
 
 @media only screen and (max-width: 500px) {
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+    }
+
     h1 {
         font-size: 28px;
     }
