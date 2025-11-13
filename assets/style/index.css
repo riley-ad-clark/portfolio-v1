@@ -787,9 +787,7 @@ img {
     h2 {
         font-size: 30px;
     }
-    h3 {
-        font-size: 25px;
-    }
+
     .project-title-link {
         display: flex;
         flex-direction: row;
@@ -1215,7 +1213,7 @@ nav.foot {
     }
 
     i.hamburger {
-        color: #fff;
+        color: #ffffff;
         font-size: 30px;
         display: block;
         line-height: 70px;
@@ -1297,11 +1295,19 @@ nav.foot {
         color: var(--col-light-grey-alt);
         display: none;
     }
+
 }
+    .photo-title {
+        font-size: 16px; !important;/* or whatever size you want */
+    }
+    .photo-description {
+        font-size: 14px; !important;
+    }
 }
 
 
 @media only screen and (max-width: 500px) {
+
     .img2 {
         order: 2;
         height: auto;
