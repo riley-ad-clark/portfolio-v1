@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./assets/style/index.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
         <script rel="javascript" src="./assets/js/index.js" type="text/javascript" defer></script>
-        <title>Riley Clark | Full-stack Developer</title>
+        <title>Riley Clark | Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     </head>
     <body class="dark-bg">
         <!-- --------------header---------------->
@@ -33,8 +34,8 @@
                     <nav class="head">
                         <ul class="head-ul">
                             <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Tech stack</a></li>
-                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Coding</a></li>
+                            <li><a href="#photography">Photography</a></li>
                             <li><a href="mailto:rileyclarky@gmail.com?subject=Inquiry%20From%20Portfolio%20Page" class="c-button green-bg">contact</a></li>
                         </ul>
                         <i class="fa-solid fa-burger hamburger"></i>
@@ -47,10 +48,10 @@
     <!--------side menu-------->
         <nav class="side-menu">
             <ul>
-                <li class="about-side-li"><a href="#about">about</a></li>
-                <li class="skills-side-li"><a href="#skills">Tech Stack</a></li>
-                <li class="projects-side-li"><a href="#projects">projects</a></li>
-                <li class="contact-side-li"><a href="mailto:rileyclarky@gmail.com?subject=Inquiry%20From%20Portfolio%20Page">contact</a></li>
+                <a href="#about"><li class="about-side-li">About</li></a>
+                <a href="#skills"><li class="skills-side-li">Coding</li></a>
+                <a href="#photography"><li class="projects-side-li">Photography</li></a>
+                <a href="mailto:rileyclarky@gmail.com?subject=Inquiry%20From%20Portfolio%20Page"><li class="contact-side-li">contact</li></a>
             </ul>
             <ul class="side-menu-secret">
                 <li><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" class="side-secret">secret?</a></li>
@@ -68,7 +69,7 @@
         <div class="container center">
             <div>
                 <h1>Hi! My name is <span class="green">Riley Clark</span>,</h1>
-                <h1>I am a <span class="shimmer">full-stack developer</span>.</h1>
+                <h1>I am a <span class="shimmer" id="typing-text"></span></h1>
                 <h2 class="hero-h2">Care to know more?</span></h2>
                 <div class="buttons">
                     <a href="#about"><button class="start-here">Start here</button></a>
@@ -78,28 +79,32 @@
         </div>
     </div>
     </section>
+
     <!----------------end of hero---------------->
     <!--------about-------->
     <main>
         <div class="about" id="about">
             <div class="about-sect container">
-                <img class="img1" src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/refs/heads/main/personal-photo-02.png" alt="Melody; Riley's beautiful, and kind dutch shepherd dog!">
+                <img class="img1" src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/refs/heads/main/image.png" alt="Melody; Riley's beautiful, and kind dutch shepherd dog!">
                 <div class="about-inner">
                     <h2 class="green">About Me <span class="blink">:</span></h2>
                     <p class="main-p">
-                        I was born, raised, and currently live in Winnipeg, Manitoba. While I initially pursued graphic design, my path naturally shifted toward programming; a field I hadn’t originally
-                        considered. That shift ultimately led to the creation of this site, and what began as a pivot has turned into a deeply fulfilling journey.
+                        I was born, raised, and currently live in Winnipeg, Manitoba. While my journey began in graphic design, my focus naturally transitioned toward programming; a field that
+                        continues to challenge and inspire me daily. That shift ultimately led to the creation of this site and has since grown into a long-term passion built on curiosity,
+                        creativity, and problem-solving.
                     </p>
 
                     <p class="main-p">
-                        Outside of work, I’m an avid enthusiast of video games, music, anime, and film; anything that offers a chance to unwind and explore creativity in different forms.
-                        I also have a strong interest in digital media environments, including media servers and home tech setups. These hobbies not only provide balance but also influence
-                        the way I approach user experiences in my development work.
-                    </p>   
+                        Beyond development, I’m deeply involved in photography and music. Whether capturing live performances or expressing creativity through drumming, I find both
+                        art forms complement the precision and rhythm I bring to coding. Each discipline sharpens my sense of timing, attention to detail, and appreciation
+                        for well-crafted experiences.
+                    </p>
+
                     <p class="main-p">
-                       Above all, I have a genuine love for coding; both its challenges and triumphs. The ever-evolving nature of technology ensures there's always something new to
-                       learn, making it an ideal space for anyone with a curious mind. It’s this continuous learning that fuels my growth as a developer and keeps me excited about what’s next.
-                    </p>  
+                        Above all, I’m driven by a genuine love for building and improving things; from efficient, user-focused software to creative projects that push my technical
+                        and artistic limits. The ever-changing nature of technology ensures there’s always more to learn, and that ongoing growth is what keeps me motivated and
+                        excited for what’s next.
+                    </p>
                 </div>
                 
                 <img class="img2" src="
@@ -147,6 +152,7 @@
                     </div>
                 </div>
                 </div>
+            </div>
     </main>
     <!--------end of about-------->
     <!--------skills-------->
@@ -363,6 +369,89 @@
         </div>
     </section>
     <!--------end of projects--------->
+
+        <!--------start of photography-------->
+<section id="photography" class="photography-sect-buffer"></section>
+        <section class="projects-sect container" >
+            <h2 class="green">Photography<span class="blink">:</span></h2>
+            <p class="main-p">
+                As a photographer with a focus on live music and performance, I’ve developed a deep appreciation for capturing the atmosphere, energy,
+                and emotion that define every show. Concert photography, in particular, challenges me to adapt quickly to changing lighting, movement,
+                and mood; skills that translate directly into my creative and technical work overall.
+                Below is a single photo from each concert I’ve had the opportunity to cover since stepping into the pit,
+                representing not just moments in time, but the growth of my craft and my continued pursuit of storytelling through imagery.
+            </p>
+
+            <div class="projects-box">
+                <div class="photo">
+                    <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/Screenshot_20251113-100340.png">
+                    <div class="photo-details">
+                        <div>
+                            <h3 class="project-title" style="text-align:center;">Freddie Dredd | 1nonly | Cursed</h3>
+                        </div>
+                        <div class="photo-description">
+                            <h4>November 11, 2025</h4>
+                            <h4>The Park Theatre, Winnipeg MB</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/Screenshot_20251113-100423.png">
+                    <div class="photo-details">
+                        <div>
+                            <h3 class="project-title" style="text-align:center;">The Beaches | Valley</h3>
+                        </div>
+                        <div class="photo-description">
+                            <h4>November 2, 2025</h4>
+                            <h4>Burton Cummings Theatre, Winnipeg MB</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/Screenshot_20251113-100444.png">
+                    <div class="photo-details">
+                        <div>
+                            <h3 class="project-title" style="text-align:center;">Hotel Mira | Zach Riley</h3>
+                        </div>
+                        <div class="photo-description">
+                            <h4>October 7, 2025</h4>
+                            <h4>The Park Theatre, Winnipeg MB</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/PXL_20250828_025617306_1.jpg">
+                    <div class="photo-details">
+                        <div>
+                            <h3 class="project-title">Deftones | Phantogram | The Barbarians of California</h3>
+                        </div>
+                        <div class="photo-description">
+                            <h4>August 27, 2025</h4>
+                            <h4>Bell MTS Centre, Winnipeg MB</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="https://raw.githubusercontent.com/riley-ad-clark/image-collection/main/Screenshot_20251113-1005142.jpg">
+                    <div class="photo-details">
+                        <div>
+                            <h3 class="project-title">Pierce the Veil | Sleeping With Sirens | Beach Weather</h3>
+                        </div>
+                        <div class="photo-description">
+                            <h4>June 7, 2025</h4>
+                            <h4>The Armory, Minneapolis MN</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------end of photography-------->
     <!--------contact-------->
     <section class="contact center" id="contact">
         <div class="container center contact-div">
@@ -387,5 +476,37 @@
             </div>
         </footer>
         <!--------end of footer-------->
+        <script>
+            const words = ["full-stack developer.", "photographer.", "musician."];
+            const textElement = document.getElementById("typing-text");
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeEffect() {
+                const currentWord = words[wordIndex];
+                const displayed = currentWord.substring(0, charIndex);
+                textElement.textContent = displayed;
+
+                if (!isDeleting && charIndex < currentWord.length) {
+                    charIndex++;
+                    setTimeout(typeEffect, 100);
+                } else if (isDeleting && charIndex > 0) {
+                    charIndex--;
+                    setTimeout(typeEffect, 50);
+                } else {
+                    if (!isDeleting) {
+                        isDeleting = true;
+                        setTimeout(typeEffect, 3000); // pause at full word
+                    } else {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                        setTimeout(typeEffect, 300); // brief pause before next word
+                    }
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", typeEffect);
+        </script>
     </body>
 </html>
